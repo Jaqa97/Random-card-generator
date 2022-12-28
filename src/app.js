@@ -23,11 +23,17 @@ window.onload = function() {
     "Q",
     "K"
   ];
+  let pinta = ["spade", "club", "diamond", "heart"];
   function randomNumber() {
     let number = numbers[Math.floor(Math.random() * numbers.length)];
-    console.log(number);
   }
-  let pasteNumber = (document.getElementsByClassName(
-    "number"
-  ).innerHTML = randomNumber());
+  let pasteNumber = (document.querySelector(".number").innerHTML =
+    numbers[Math.floor(Math.random() * numbers.length)]);
+  let randomPinta = pinta[Math.floor(Math.random() * pinta.length)];
+  let changePintaTop = document
+    .querySelector(".top")
+    .classList.add(randomPinta);
+  let changePintaBotton = document
+    .querySelector(".bottom")
+    .classList.add(randomPinta);
 };

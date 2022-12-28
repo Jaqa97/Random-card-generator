@@ -37,3 +37,35 @@ body {
   top: 200px;
   right: 170px;
 }
+.heart {
+  color: red;
+  visibility: hidden;
+}
+.heart::after {
+  visibility: visible;
+  content: "\2665";
+}
+.spade {
+  color: black;
+  visibility: hidden;
+}
+.spade::after {
+  visibility: visible;
+  content: "\2660";
+}
+.diamond {
+  color: red;
+  visibility: hidden;
+}
+.diamond::after {
+  visibility: visible;
+  content: "\2666";
+}
+.club {
+  color: black;
+  visibility: visible;
+}
+.club::after {
+  visibility: visible;
+  content: "\2663";
+}
